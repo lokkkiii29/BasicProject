@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 2000px; /* for scrolling demo */
+}
+
+/* Navbar base style */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #2196f3, #4caf50);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.5s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+/* Navbar when scrolled */
+nav.scrolled {
+    background: linear-gradient(45deg, #ff5722, #e91e63);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Menu list */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Active link style */
+nav ul li a.active {
+    background: rgba(255, 255, 255, 0.3);
+}
